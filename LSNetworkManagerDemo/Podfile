@@ -1,0 +1,13 @@
+platform :ios, '8.0'
+
+target 'LSNetworkManagerDemo' do
+  # use_frameworks!
+
+  # Pods for LSNetworkManagerDemo
+  pod 'AFNetworking', '~>3.2.1'
+  target 'LSNetworkManagerDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

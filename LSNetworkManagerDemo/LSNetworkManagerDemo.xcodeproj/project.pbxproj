@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F937882490E8C83A26E4136 /* libPods-LSNetworkManagerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24648758BE9AEBB99CD8537A /* libPods-LSNetworkManagerDemo.a */; };
+		4BA5B74B21F0601300A675AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B74A21F0601300A675AB /* AppDelegate.m */; };
+		4BA5B74E21F0601300A675AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B74D21F0601300A675AB /* ViewController.m */; };
+		4BA5B75121F0601300A675AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA5B74F21F0601300A675AB /* Main.storyboard */; };
+		4BA5B75321F0601400A675AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA5B75221F0601400A675AB /* Assets.xcassets */; };
+		4BA5B75621F0601400A675AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA5B75421F0601400A675AB /* LaunchScreen.storyboard */; };
+		4BA5B75921F0601400A675AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B75821F0601400A675AB /* main.m */; };
+		4BA5B76321F0601400A675AB /* LSNetworkManagerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B76221F0601400A675AB /* LSNetworkManagerDemoTests.m */; };
+		4BA5B77021F0633C00A675AB /* LSNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B76F21F0633C00A675AB /* LSNetworkConfig.m */; };
+		829A8C2EE0DB03EB5976502C /* libPods-LSNetworkManagerDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F35FA9C64B717590761880 /* libPods-LSNetworkManagerDemoTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BA5B75F21F0601400A675AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BA5B73E21F0601300A675AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BA5B74521F0601300A675AB;
+			remoteInfo = LSNetworkManagerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24648758BE9AEBB99CD8537A /* libPods-LSNetworkManagerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LSNetworkManagerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C9173F74A199B5C8B70E914 /* Pods-LSNetworkManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSNetworkManagerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSNetworkManagerDemo/Pods-LSNetworkManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4BA5B74621F0601300A675AB /* LSNetworkManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSNetworkManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA5B74921F0601300A675AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4BA5B74A21F0601300A675AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4BA5B74C21F0601300A675AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4BA5B74D21F0601300A675AB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4BA5B75021F0601300A675AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BA5B75221F0601400A675AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BA5B75521F0601400A675AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4BA5B75721F0601400A675AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA5B75821F0601400A675AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4BA5B75E21F0601400A675AB /* LSNetworkManagerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LSNetworkManagerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA5B76221F0601400A675AB /* LSNetworkManagerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSNetworkManagerDemoTests.m; sourceTree = "<group>"; };
+		4BA5B76421F0601400A675AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA5B76E21F0633C00A675AB /* LSNetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSNetworkConfig.h; sourceTree = "<group>"; };
+		4BA5B76F21F0633C00A675AB /* LSNetworkConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSNetworkConfig.m; sourceTree = "<group>"; };
+		58F35FA9C64B717590761880 /* libPods-LSNetworkManagerDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LSNetworkManagerDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0229B3BE8DD008FE4A7D08 /* Pods-LSNetworkManagerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSNetworkManagerDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSNetworkManagerDemoTests/Pods-LSNetworkManagerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E965ED37858C941E5D1A0DA4 /* Pods-LSNetworkManagerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSNetworkManagerDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSNetworkManagerDemoTests/Pods-LSNetworkManagerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F93874B011DA83B71707E227 /* Pods-LSNetworkManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSNetworkManagerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSNetworkManagerDemo/Pods-LSNetworkManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BA5B74321F0601300A675AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F937882490E8C83A26E4136 /* libPods-LSNetworkManagerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA5B75B21F0601400A675AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				829A8C2EE0DB03EB5976502C /* libPods-LSNetworkManagerDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D1E339A7F28CFB819A14331 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F93874B011DA83B71707E227 /* Pods-LSNetworkManagerDemo.debug.xcconfig */,
+				3C9173F74A199B5C8B70E914 /* Pods-LSNetworkManagerDemo.release.xcconfig */,
+				E965ED37858C941E5D1A0DA4 /* Pods-LSNetworkManagerDemoTests.debug.xcconfig */,
+				7E0229B3BE8DD008FE4A7D08 /* Pods-LSNetworkManagerDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4BA5B73D21F0601300A675AB = {
+			isa = PBXGroup;
+			children = (
+				4BA5B74821F0601300A675AB /* LSNetworkManagerDemo */,
+				4BA5B76121F0601400A675AB /* LSNetworkManagerDemoTests */,
+				4BA5B74721F0601300A675AB /* Products */,
+				2D1E339A7F28CFB819A14331 /* Pods */,
+				FAAC022BC2D65EC2A99770AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4BA5B74721F0601300A675AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B74621F0601300A675AB /* LSNetworkManagerDemo.app */,
+				4BA5B75E21F0601400A675AB /* LSNetworkManagerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BA5B74821F0601300A675AB /* LSNetworkManagerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B76D21F061AA00A675AB /* LSNetworkManager */,
+				4BA5B74921F0601300A675AB /* AppDelegate.h */,
+				4BA5B74A21F0601300A675AB /* AppDelegate.m */,
+				4BA5B74C21F0601300A675AB /* ViewController.h */,
+				4BA5B74D21F0601300A675AB /* ViewController.m */,
+				4BA5B74F21F0601300A675AB /* Main.storyboard */,
+				4BA5B75221F0601400A675AB /* Assets.xcassets */,
+				4BA5B75421F0601400A675AB /* LaunchScreen.storyboard */,
+				4BA5B75721F0601400A675AB /* Info.plist */,
+				4BA5B75821F0601400A675AB /* main.m */,
+			);
+			path = LSNetworkManagerDemo;
+			sourceTree = "<group>";
+		};
+		4BA5B76121F0601400A675AB /* LSNetworkManagerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B76221F0601400A675AB /* LSNetworkManagerDemoTests.m */,
+				4BA5B76421F0601400A675AB /* Info.plist */,
+			);
+			path = LSNetworkManagerDemoTests;
+			sourceTree = "<group>";
+		};
+		4BA5B76D21F061AA00A675AB /* LSNetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B76E21F0633C00A675AB /* LSNetworkConfig.h */,
+				4BA5B76F21F0633C00A675AB /* LSNetworkConfig.m */,
+			);
+			name = LSNetworkManager;
+			path = ../../LSNetworkManager;
+			sourceTree = "<group>";
+		};
+		FAAC022BC2D65EC2A99770AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24648758BE9AEBB99CD8537A /* libPods-LSNetworkManagerDemo.a */,
+				58F35FA9C64B717590761880 /* libPods-LSNetworkManagerDemoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BA5B74521F0601300A675AB /* LSNetworkManagerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BA5B76721F0601400A675AB /* Build configuration list for PBXNativeTarget "LSNetworkManagerDemo" */;
+			buildPhases = (
+				D349831945C82E52D027B5E9 /* [CP] Check Pods Manifest.lock */,
+				4BA5B74221F0601300A675AB /* Sources */,
+				4BA5B74321F0601300A675AB /* Frameworks */,
+				4BA5B74421F0601300A675AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LSNetworkManagerDemo;
+			productName = LSNetworkManagerDemo;
+			productReference = 4BA5B74621F0601300A675AB /* LSNetworkManagerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BA5B75D21F0601400A675AB /* LSNetworkManagerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BA5B76A21F0601400A675AB /* Build configuration list for PBXNativeTarget "LSNetworkManagerDemoTests" */;
+			buildPhases = (
+				6D44C92896FACCFA3BF4EBF1 /* [CP] Check Pods Manifest.lock */,
+				4BA5B75A21F0601400A675AB /* Sources */,
+				4BA5B75B21F0601400A675AB /* Frameworks */,
+				4BA5B75C21F0601400A675AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BA5B76021F0601400A675AB /* PBXTargetDependency */,
+			);
+			name = LSNetworkManagerDemoTests;
+			productName = LSNetworkManagerDemoTests;
+			productReference = 4BA5B75E21F0601400A675AB /* LSNetworkManagerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BA5B73E21F0601300A675AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "刘帅";
+				TargetAttributes = {
+					4BA5B74521F0601300A675AB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4BA5B75D21F0601400A675AB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4BA5B74521F0601300A675AB;
+					};
+				};
+			};
+			buildConfigurationList = 4BA5B74121F0601300A675AB /* Build configuration list for PBXProject "LSNetworkManagerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BA5B73D21F0601300A675AB;
+			productRefGroup = 4BA5B74721F0601300A675AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BA5B74521F0601300A675AB /* LSNetworkManagerDemo */,
+				4BA5B75D21F0601400A675AB /* LSNetworkManagerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BA5B74421F0601300A675AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA5B75621F0601400A675AB /* LaunchScreen.storyboard in Resources */,
+				4BA5B75321F0601400A675AB /* Assets.xcassets in Resources */,
+				4BA5B75121F0601300A675AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA5B75C21F0601400A675AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D44C92896FACCFA3BF4EBF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LSNetworkManagerDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D349831945C82E52D027B5E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LSNetworkManagerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BA5B74221F0601300A675AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA5B74E21F0601300A675AB /* ViewController.m in Sources */,
+				4BA5B75921F0601400A675AB /* main.m in Sources */,
+				4BA5B74B21F0601300A675AB /* AppDelegate.m in Sources */,
+				4BA5B77021F0633C00A675AB /* LSNetworkConfig.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA5B75A21F0601400A675AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA5B76321F0601400A675AB /* LSNetworkManagerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BA5B76021F0601400A675AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BA5B74521F0601300A675AB /* LSNetworkManagerDemo */;
+			targetProxy = 4BA5B75F21F0601400A675AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BA5B74F21F0601300A675AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BA5B75021F0601300A675AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4BA5B75421F0601400A675AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BA5B75521F0601400A675AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BA5B76521F0601400A675AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4BA5B76621F0601400A675AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BA5B76821F0601400A675AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F93874B011DA83B71707E227 /* Pods-LSNetworkManagerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LSNetworkManagerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LSNetworkManagerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BA5B76921F0601400A675AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C9173F74A199B5C8B70E914 /* Pods-LSNetworkManagerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LSNetworkManagerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LSNetworkManagerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4BA5B76B21F0601400A675AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E965ED37858C941E5D1A0DA4 /* Pods-LSNetworkManagerDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LSNetworkManagerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LSNetworkManagerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LSNetworkManagerDemo.app/LSNetworkManagerDemo";
+			};
+			name = Debug;
+		};
+		4BA5B76C21F0601400A675AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E0229B3BE8DD008FE4A7D08 /* Pods-LSNetworkManagerDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LSNetworkManagerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LSNetworkManagerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LSNetworkManagerDemo.app/LSNetworkManagerDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BA5B74121F0601300A675AB /* Build configuration list for PBXProject "LSNetworkManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA5B76521F0601400A675AB /* Debug */,
+				4BA5B76621F0601400A675AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BA5B76721F0601400A675AB /* Build configuration list for PBXNativeTarget "LSNetworkManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA5B76821F0601400A675AB /* Debug */,
+				4BA5B76921F0601400A675AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BA5B76A21F0601400A675AB /* Build configuration list for PBXNativeTarget "LSNetworkManagerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA5B76B21F0601400A675AB /* Debug */,
+				4BA5B76C21F0601400A675AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BA5B73E21F0601300A675AB /* Project object */;
+}

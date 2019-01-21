@@ -16,6 +16,22 @@
 		4BA5B75921F0601400A675AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B75821F0601400A675AB /* main.m */; };
 		4BA5B76321F0601400A675AB /* LSNetworkManagerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B76221F0601400A675AB /* LSNetworkManagerDemoTests.m */; };
 		4BA5B77021F0633C00A675AB /* LSNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B76F21F0633C00A675AB /* LSNetworkConfig.m */; };
+		4BA5B7CB21F58E2600A675AB /* NSArray+LSNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B7CA21F58E2600A675AB /* NSArray+LSNetwork.m */; };
+		4BA5B7CE21F58ED900A675AB /* NSDictionary+LSNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B7CD21F58ED900A675AB /* NSDictionary+LSNetwork.m */; };
+		4BA5B7D121F5908200A675AB /* NSMutableString+LSNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B7D021F5908200A675AB /* NSMutableString+LSNetwork.m */; };
+		4BA5B7D421F590F700A675AB /* NSObject+LSNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B7D321F590F700A675AB /* NSObject+LSNetwork.m */; };
+		4BA5B7D721F5920B00A675AB /* NSURLRequest+LSNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B7D621F5920B00A675AB /* NSURLRequest+LSNetwork.m */; };
+		4BA5B7DB21F5943400A675AB /* LSCacheObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B7DA21F5943400A675AB /* LSCacheObject.m */; };
+		4BA5B7DE21F594A000A675AB /* LSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B7DD21F594A000A675AB /* LSCache.m */; };
+		4BA5B7E521F5967E00A675AB /* LSService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B7E421F5967E00A675AB /* LSService.m */; };
+		4BA5B7EC21F5A40000A675AB /* LSURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B7EB21F5A40000A675AB /* LSURLResponse.m */; };
+		4BA5B7EF21F5A50A00A675AB /* LSResponseError.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B7EE21F5A50A00A675AB /* LSResponseError.m */; };
+		4BA5B7F221F5A5F100A675AB /* LSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B7F121F5A5F100A675AB /* LSLogger.m */; };
+		4BA5B7F621F5A87B00A675AB /* LSRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B7F521F5A87B00A675AB /* LSRequestGenerator.m */; };
+		4BA5B7FA21F5A8BB00A675AB /* LSUploadFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B7F921F5A8BB00A675AB /* LSUploadFileItem.m */; };
+		4BA5B7FD21F5A9E000A675AB /* LSServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B7FC21F5A9E000A675AB /* LSServiceFactory.m */; };
+		4BA5B80021F5AB7600A675AB /* LSApiProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B7FF21F5AB7600A675AB /* LSApiProxy.m */; };
+		4BA5B80321F5AEB400A675AB /* LSAPIBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B80221F5AEB400A675AB /* LSAPIBaseManager.m */; };
 		829A8C2EE0DB03EB5976502C /* libPods-LSNetworkManagerDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F35FA9C64B717590761880 /* libPods-LSNetworkManagerDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +63,41 @@
 		4BA5B76421F0601400A675AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BA5B76E21F0633C00A675AB /* LSNetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSNetworkConfig.h; sourceTree = "<group>"; };
 		4BA5B76F21F0633C00A675AB /* LSNetworkConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSNetworkConfig.m; sourceTree = "<group>"; };
+		4BA5B7C921F58E2600A675AB /* NSArray+LSNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+LSNetwork.h"; sourceTree = "<group>"; };
+		4BA5B7CA21F58E2600A675AB /* NSArray+LSNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LSNetwork.m"; sourceTree = "<group>"; };
+		4BA5B7CC21F58ED900A675AB /* NSDictionary+LSNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LSNetwork.h"; sourceTree = "<group>"; };
+		4BA5B7CD21F58ED900A675AB /* NSDictionary+LSNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LSNetwork.m"; sourceTree = "<group>"; };
+		4BA5B7CF21F5908200A675AB /* NSMutableString+LSNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+LSNetwork.h"; sourceTree = "<group>"; };
+		4BA5B7D021F5908200A675AB /* NSMutableString+LSNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+LSNetwork.m"; sourceTree = "<group>"; };
+		4BA5B7D221F590F700A675AB /* NSObject+LSNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LSNetwork.h"; sourceTree = "<group>"; };
+		4BA5B7D321F590F700A675AB /* NSObject+LSNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LSNetwork.m"; sourceTree = "<group>"; };
+		4BA5B7D521F5920B00A675AB /* NSURLRequest+LSNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+LSNetwork.h"; sourceTree = "<group>"; };
+		4BA5B7D621F5920B00A675AB /* NSURLRequest+LSNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+LSNetwork.m"; sourceTree = "<group>"; };
+		4BA5B7D921F5943400A675AB /* LSCacheObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSCacheObject.h; sourceTree = "<group>"; };
+		4BA5B7DA21F5943400A675AB /* LSCacheObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSCacheObject.m; sourceTree = "<group>"; };
+		4BA5B7DC21F594A000A675AB /* LSCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSCache.h; sourceTree = "<group>"; };
+		4BA5B7DD21F594A000A675AB /* LSCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSCache.m; sourceTree = "<group>"; };
+		4BA5B7E321F5967E00A675AB /* LSService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSService.h; sourceTree = "<group>"; };
+		4BA5B7E421F5967E00A675AB /* LSService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSService.m; sourceTree = "<group>"; };
+		4BA5B7E821F597C800A675AB /* LSNetworkEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSNetworkEnum.h; sourceTree = "<group>"; };
+		4BA5B7EA21F5A40000A675AB /* LSURLResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSURLResponse.h; sourceTree = "<group>"; };
+		4BA5B7EB21F5A40000A675AB /* LSURLResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSURLResponse.m; sourceTree = "<group>"; };
+		4BA5B7ED21F5A50A00A675AB /* LSResponseError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSResponseError.h; sourceTree = "<group>"; };
+		4BA5B7EE21F5A50A00A675AB /* LSResponseError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSResponseError.m; sourceTree = "<group>"; };
+		4BA5B7F021F5A5F100A675AB /* LSLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSLogger.h; sourceTree = "<group>"; };
+		4BA5B7F121F5A5F100A675AB /* LSLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSLogger.m; sourceTree = "<group>"; };
+		4BA5B7F421F5A87B00A675AB /* LSRequestGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSRequestGenerator.h; sourceTree = "<group>"; };
+		4BA5B7F521F5A87B00A675AB /* LSRequestGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSRequestGenerator.m; sourceTree = "<group>"; };
+		4BA5B7F821F5A8BB00A675AB /* LSUploadFileItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSUploadFileItem.h; sourceTree = "<group>"; };
+		4BA5B7F921F5A8BB00A675AB /* LSUploadFileItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSUploadFileItem.m; sourceTree = "<group>"; };
+		4BA5B7FB21F5A9E000A675AB /* LSServiceFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSServiceFactory.h; sourceTree = "<group>"; };
+		4BA5B7FC21F5A9E000A675AB /* LSServiceFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSServiceFactory.m; sourceTree = "<group>"; };
+		4BA5B7FE21F5AB7600A675AB /* LSApiProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSApiProxy.h; sourceTree = "<group>"; };
+		4BA5B7FF21F5AB7600A675AB /* LSApiProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSApiProxy.m; sourceTree = "<group>"; };
+		4BA5B80121F5AEB400A675AB /* LSAPIBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSAPIBaseManager.h; sourceTree = "<group>"; };
+		4BA5B80221F5AEB400A675AB /* LSAPIBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSAPIBaseManager.m; sourceTree = "<group>"; };
+		4BA5B80521F5BBFD00A675AB /* LSErrorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSErrorProtocol.h; sourceTree = "<group>"; };
+		4BA5B80621F5D01100A675AB /* LSServiceCreateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSServiceCreateProtocol.h; sourceTree = "<group>"; };
 		58F35FA9C64B717590761880 /* libPods-LSNetworkManagerDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LSNetworkManagerDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0229B3BE8DD008FE4A7D08 /* Pods-LSNetworkManagerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSNetworkManagerDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSNetworkManagerDemoTests/Pods-LSNetworkManagerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		E965ED37858C941E5D1A0DA4 /* Pods-LSNetworkManagerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSNetworkManagerDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSNetworkManagerDemoTests/Pods-LSNetworkManagerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,11 +184,134 @@
 		4BA5B76D21F061AA00A675AB /* LSNetworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				4BA5B7DF21F5961D00A675AB /* APIManager */,
+				4BA5B80421F5B89800A675AB /* Protocol */,
+				4BA5B7E021F5961D00A675AB /* APIProxy */,
+				4BA5B7E121F5961D00A675AB /* Log */,
+				4BA5B7E221F5965F00A675AB /* Services */,
+				4BA5B7D821F593C900A675AB /* Cache */,
+				4BA5B7C821F58E0A00A675AB /* Categories */,
+				4BA5B7F721F5A89900A675AB /* Item */,
+				4BA5B7F321F5A7B900A675AB /* Request */,
+				4BA5B7E921F5981400A675AB /* Response */,
+				4BA5B7E621F5977B00A675AB /* Enum */,
 				4BA5B76E21F0633C00A675AB /* LSNetworkConfig.h */,
 				4BA5B76F21F0633C00A675AB /* LSNetworkConfig.m */,
 			);
 			name = LSNetworkManager;
 			path = ../../LSNetworkManager;
+			sourceTree = "<group>";
+		};
+		4BA5B7C821F58E0A00A675AB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B7D221F590F700A675AB /* NSObject+LSNetwork.h */,
+				4BA5B7D321F590F700A675AB /* NSObject+LSNetwork.m */,
+				4BA5B7C921F58E2600A675AB /* NSArray+LSNetwork.h */,
+				4BA5B7CA21F58E2600A675AB /* NSArray+LSNetwork.m */,
+				4BA5B7CC21F58ED900A675AB /* NSDictionary+LSNetwork.h */,
+				4BA5B7CD21F58ED900A675AB /* NSDictionary+LSNetwork.m */,
+				4BA5B7CF21F5908200A675AB /* NSMutableString+LSNetwork.h */,
+				4BA5B7D021F5908200A675AB /* NSMutableString+LSNetwork.m */,
+				4BA5B7D521F5920B00A675AB /* NSURLRequest+LSNetwork.h */,
+				4BA5B7D621F5920B00A675AB /* NSURLRequest+LSNetwork.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4BA5B7D821F593C900A675AB /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B7DC21F594A000A675AB /* LSCache.h */,
+				4BA5B7DD21F594A000A675AB /* LSCache.m */,
+				4BA5B7D921F5943400A675AB /* LSCacheObject.h */,
+				4BA5B7DA21F5943400A675AB /* LSCacheObject.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		4BA5B7DF21F5961D00A675AB /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B80121F5AEB400A675AB /* LSAPIBaseManager.h */,
+				4BA5B80221F5AEB400A675AB /* LSAPIBaseManager.m */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		4BA5B7E021F5961D00A675AB /* APIProxy */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B7FE21F5AB7600A675AB /* LSApiProxy.h */,
+				4BA5B7FF21F5AB7600A675AB /* LSApiProxy.m */,
+			);
+			path = APIProxy;
+			sourceTree = "<group>";
+		};
+		4BA5B7E121F5961D00A675AB /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B7F021F5A5F100A675AB /* LSLogger.h */,
+				4BA5B7F121F5A5F100A675AB /* LSLogger.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		4BA5B7E221F5965F00A675AB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B7E321F5967E00A675AB /* LSService.h */,
+				4BA5B7E421F5967E00A675AB /* LSService.m */,
+				4BA5B7FB21F5A9E000A675AB /* LSServiceFactory.h */,
+				4BA5B7FC21F5A9E000A675AB /* LSServiceFactory.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4BA5B7E621F5977B00A675AB /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B7E821F597C800A675AB /* LSNetworkEnum.h */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		4BA5B7E921F5981400A675AB /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B7EA21F5A40000A675AB /* LSURLResponse.h */,
+				4BA5B7EB21F5A40000A675AB /* LSURLResponse.m */,
+				4BA5B7ED21F5A50A00A675AB /* LSResponseError.h */,
+				4BA5B7EE21F5A50A00A675AB /* LSResponseError.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		4BA5B7F321F5A7B900A675AB /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B7F421F5A87B00A675AB /* LSRequestGenerator.h */,
+				4BA5B7F521F5A87B00A675AB /* LSRequestGenerator.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		4BA5B7F721F5A89900A675AB /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B7F821F5A8BB00A675AB /* LSUploadFileItem.h */,
+				4BA5B7F921F5A8BB00A675AB /* LSUploadFileItem.m */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		4BA5B80421F5B89800A675AB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B80521F5BBFD00A675AB /* LSErrorProtocol.h */,
+				4BA5B80621F5D01100A675AB /* LSServiceCreateProtocol.h */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		FAAC022BC2D65EC2A99770AE /* Frameworks */ = {
@@ -195,6 +369,7 @@
 		4BA5B73E21F0601300A675AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LS;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "刘帅";
 				TargetAttributes = {
@@ -291,9 +466,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BA5B74E21F0601300A675AB /* ViewController.m in Sources */,
+				4BA5B7F221F5A5F100A675AB /* LSLogger.m in Sources */,
+				4BA5B7CB21F58E2600A675AB /* NSArray+LSNetwork.m in Sources */,
+				4BA5B7DB21F5943400A675AB /* LSCacheObject.m in Sources */,
+				4BA5B7D121F5908200A675AB /* NSMutableString+LSNetwork.m in Sources */,
+				4BA5B7D421F590F700A675AB /* NSObject+LSNetwork.m in Sources */,
+				4BA5B7CE21F58ED900A675AB /* NSDictionary+LSNetwork.m in Sources */,
+				4BA5B7DE21F594A000A675AB /* LSCache.m in Sources */,
+				4BA5B80321F5AEB400A675AB /* LSAPIBaseManager.m in Sources */,
+				4BA5B7EC21F5A40000A675AB /* LSURLResponse.m in Sources */,
+				4BA5B7FD21F5A9E000A675AB /* LSServiceFactory.m in Sources */,
+				4BA5B7D721F5920B00A675AB /* NSURLRequest+LSNetwork.m in Sources */,
 				4BA5B75921F0601400A675AB /* main.m in Sources */,
+				4BA5B7EF21F5A50A00A675AB /* LSResponseError.m in Sources */,
 				4BA5B74B21F0601300A675AB /* AppDelegate.m in Sources */,
+				4BA5B7E521F5967E00A675AB /* LSService.m in Sources */,
+				4BA5B7F621F5A87B00A675AB /* LSRequestGenerator.m in Sources */,
 				4BA5B77021F0633C00A675AB /* LSNetworkConfig.m in Sources */,
+				4BA5B80021F5AB7600A675AB /* LSApiProxy.m in Sources */,
+				4BA5B7FA21F5A8BB00A675AB /* LSUploadFileItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +645,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LSNetworkManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +663,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LSNetworkManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

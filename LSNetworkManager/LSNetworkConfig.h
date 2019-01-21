@@ -7,11 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-
-NS_ASSUME_NONNULL_BEGIN
+@protocol LSErrorProtocol;
 
 @interface LSNetworkConfig : NSObject
 
-@end
+/** 是否使用缓存, 默认为NO*/
+@property (nonatomic, assign) BOOL shouldCache;
+/** 错误处理代理*/
+@property (nonatomic, strong, nonnull) id<LSErrorProtocol> errorDelegate;
 
-NS_ASSUME_NONNULL_END
++ (instancetype)sharedInstance;
+
+/**
+ 网络是否可用
+ */
+- (BOOL)isReachable;
+@end

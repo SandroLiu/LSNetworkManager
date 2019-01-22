@@ -7,11 +7,13 @@
 //
 
 #import "LSRequestGenerator.h"
+#import "LSRequestParamsProtocol.h"
 #import "LSServiceCreateProtocol.h"
 #import "NSURLRequest+LSNetwork.h"
 #import "LSUploadFileItem.h"
-#import "LSServiceFactory.h"
+#import "LSNetworkConfig.h"
 #import <AFNetworking.h>
+#import "LSService.h"
 #import "LSLogger.h"
 
 static LSRequestGenerator *_sharedInstance = nil;
@@ -40,7 +42,7 @@ static LSRequestGenerator *_sharedInstance = nil;
 /** 生成 GET 请求*/
 - (NSURLRequest *)generateGETRequestWithServiceIdentifier:(NSString *)serviceIdentifier requestParams:(NSDictionary *)requestParams methodName:(NSString *)methodName
 {
-    LSService *service = [[LSServiceFactory sharedInstance] serviceWithIdentifier:serviceIdentifier];
+    LSService *service = [[LSNetworkConfig sharedInstance].serviceCreate serviceWithIdentifier:serviceIdentifier];
     NSString *urlString = [NSString stringWithFormat:@"%@/%@", service.apiBaseUrl, methodName];
     //!!!: 可以设置自定义的请求头
     NSDictionary *finalRequestParams = [self appendCommonParamsForRequsetParams:requestParams methodName:methodName];
@@ -53,7 +55,7 @@ static LSRequestGenerator *_sharedInstance = nil;
 /** 生成 POST 请求*/
 - (NSURLRequest *)generatePOSTRequestWithServiceIdentifier:(NSString *)serviceIdentifier requestParams:(NSDictionary *)requestParams methodName:(NSString *)methodName
 {
-    LSService *service = [[LSServiceFactory sharedInstance] serviceWithIdentifier:serviceIdentifier];
+    LSService *service = [[LSNetworkConfig sharedInstance].serviceCreate serviceWithIdentifier:serviceIdentifier];
     NSString *urlString = [NSString stringWithFormat:@"%@/%@", service.apiBaseUrl, methodName];
     //!!!: 可以设置自定义的请求头
     NSDictionary *finalRequestParams = [self appendCommonParamsForRequsetParams:requestParams methodName:methodName];
@@ -65,7 +67,8 @@ static LSRequestGenerator *_sharedInstance = nil;
 
 /** 上传数据请求 请求*/
 - (NSURLRequest *)generateUploadRequestWithServiceIdentifier:(NSString *)serviceIdentifier requestParams:(NSDictionary *)requestParams methodName:(NSString *)methodName fileDatas:(NSArray<LSUploadFileItem *> *)fileDatas {
-    LSService *service = [[LSServiceFactory sharedInstance] serviceWithIdentifier:serviceIdentifier];
+    
+    LSService *service = [[LSNetworkConfig sharedInstance].serviceCreate serviceWithIdentifier:serviceIdentifier];
     NSString *urlString = [NSString stringWithFormat:@"%@/%@", service.apiBaseUrl, methodName];
     //!!!: 可以设置自定义的请求头
     NSDictionary *finalRequestParams = [self appendCommonParamsForRequsetParams:requestParams methodName:methodName];
@@ -84,28 +87,29 @@ static LSRequestGenerator *_sharedInstance = nil;
 
 - (NSDictionary *)appendCommonParamsForRequsetParams:(NSDictionary *)requestParams methodName:(NSString *)methodName
 {
-//    if ([methodName isEqualToString:@"common/download"]) {
-//        return requestParams;
-//    }
-//    NSDictionary *commonPrarms = [NCCommonParamsGenerator commonParamsDictionary];
-//    NSMutableDictionary *finalParams = [NSMutableDictionary dictionary];
-//    [finalParams addEntriesFromDictionary:commonPrarms];
-//    [finalParams addEntriesFromDictionary:requestParams];
-//
-//    return [finalParams copy];
-    
-    //TODO: 添加具体参数拼接代码
-    return nil;
+    if (![LSNetworkConfig sharedInstance].requestParams) {
+        return requestParams;
+    }
+    if (![[LSNetworkConfig sharedInstance].requestParams respondsToSelector:@selector(paramsWithOriginParams:methodName:)]) {
+        return requestParams;
+    }
+    NSDictionary *finialParams = [[LSNetworkConfig sharedInstance].requestParams paramsWithOriginParams:requestParams methodName:methodName];
+    return finialParams;
 }
 
 #pragma mark- getters and setters
 - (AFHTTPRequestSerializer *)httpRequestSerializer
 {
-    // 使用 form 表单格式请求数据
     if (_httpRequestSerializer == nil) {
-        _httpRequestSerializer = [AFJSONRequestSerializer serializer];
-        //TODO: 设置超时时间
-        _httpRequestSerializer.timeoutInterval = 20; //TODO: 改成可配置
+        if ([LSNetworkConfig sharedInstance].requestSerializer == LSRequestSerializerTypeHTTP) {
+            // 使用 form 表单格式请求数据
+            _httpRequestSerializer = [AFHTTPRequestSerializer serializer];
+        } else {
+             _httpRequestSerializer = [AFJSONRequestSerializer serializer];
+        }
+       
+        // 设置超时时间
+        _httpRequestSerializer.timeoutInterval = [LSNetworkConfig sharedInstance].timeoutInterval; 
     }
     return _httpRequestSerializer;
 }

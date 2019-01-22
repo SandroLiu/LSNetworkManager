@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0F937882490E8C83A26E4136 /* libPods-LSNetworkManagerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24648758BE9AEBB99CD8537A /* libPods-LSNetworkManagerDemo.a */; };
+		4B1D6E5121F6C110008BDD50 /* LSNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1D6E5021F6C110008BDD50 /* LSNetworkService.m */; };
+		4B1D6E5521F6C8AF008BDD50 /* LSNetworkError.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1D6E5421F6C8AF008BDD50 /* LSNetworkError.m */; };
+		4B1D6E5821F6CB3B008BDD50 /* LSRequestParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1D6E5721F6CB3B008BDD50 /* LSRequestParams.m */; };
+		4B1D6E5B21F6CBF5008BDD50 /* LSAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1D6E5A21F6CBF5008BDD50 /* LSAppContext.m */; };
+		4B1D6E5F21F6E46C008BDD50 /* LSDemoBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1D6E5E21F6E46C008BDD50 /* LSDemoBaseManager.m */; };
+		4B1D6E6221F6E522008BDD50 /* LSLoginAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1D6E6121F6E522008BDD50 /* LSLoginAPIManager.m */; };
 		4BA5B74B21F0601300A675AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B74A21F0601300A675AB /* AppDelegate.m */; };
 		4BA5B74E21F0601300A675AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B74D21F0601300A675AB /* ViewController.m */; };
 		4BA5B75121F0601300A675AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA5B74F21F0601300A675AB /* Main.storyboard */; };
@@ -48,6 +54,20 @@
 /* Begin PBXFileReference section */
 		24648758BE9AEBB99CD8537A /* libPods-LSNetworkManagerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LSNetworkManagerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9173F74A199B5C8B70E914 /* Pods-LSNetworkManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSNetworkManagerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSNetworkManagerDemo/Pods-LSNetworkManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4B1D6E4F21F6C110008BDD50 /* LSNetworkService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSNetworkService.h; sourceTree = "<group>"; };
+		4B1D6E5021F6C110008BDD50 /* LSNetworkService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSNetworkService.m; sourceTree = "<group>"; };
+		4B1D6E5221F6C1D2008BDD50 /* LSNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSNetworkManager.h; sourceTree = "<group>"; };
+		4B1D6E5321F6C8AF008BDD50 /* LSNetworkError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSNetworkError.h; sourceTree = "<group>"; };
+		4B1D6E5421F6C8AF008BDD50 /* LSNetworkError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSNetworkError.m; sourceTree = "<group>"; };
+		4B1D6E5621F6CB3B008BDD50 /* LSRequestParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSRequestParams.h; sourceTree = "<group>"; };
+		4B1D6E5721F6CB3B008BDD50 /* LSRequestParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSRequestParams.m; sourceTree = "<group>"; };
+		4B1D6E5921F6CBF5008BDD50 /* LSAppContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSAppContext.h; sourceTree = "<group>"; };
+		4B1D6E5A21F6CBF5008BDD50 /* LSAppContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSAppContext.m; sourceTree = "<group>"; };
+		4B1D6E5C21F6E183008BDD50 /* LSNetworkManagerDemo-PCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LSNetworkManagerDemo-PCH.pch"; sourceTree = "<group>"; };
+		4B1D6E5D21F6E46C008BDD50 /* LSDemoBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSDemoBaseManager.h; sourceTree = "<group>"; };
+		4B1D6E5E21F6E46C008BDD50 /* LSDemoBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSDemoBaseManager.m; sourceTree = "<group>"; };
+		4B1D6E6021F6E522008BDD50 /* LSLoginAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSLoginAPIManager.h; sourceTree = "<group>"; };
+		4B1D6E6121F6E522008BDD50 /* LSLoginAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSLoginAPIManager.m; sourceTree = "<group>"; };
 		4BA5B74621F0601300A675AB /* LSNetworkManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSNetworkManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA5B74921F0601300A675AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4BA5B74A21F0601300A675AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,6 +118,7 @@
 		4BA5B80221F5AEB400A675AB /* LSAPIBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSAPIBaseManager.m; sourceTree = "<group>"; };
 		4BA5B80521F5BBFD00A675AB /* LSErrorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSErrorProtocol.h; sourceTree = "<group>"; };
 		4BA5B80621F5D01100A675AB /* LSServiceCreateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSServiceCreateProtocol.h; sourceTree = "<group>"; };
+		4BA5B80721F6BBB400A675AB /* LSRequestParamsProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSRequestParamsProtocol.h; sourceTree = "<group>"; };
 		58F35FA9C64B717590761880 /* libPods-LSNetworkManagerDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LSNetworkManagerDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0229B3BE8DD008FE4A7D08 /* Pods-LSNetworkManagerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSNetworkManagerDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSNetworkManagerDemoTests/Pods-LSNetworkManagerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		E965ED37858C941E5D1A0DA4 /* Pods-LSNetworkManagerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSNetworkManagerDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSNetworkManagerDemoTests/Pods-LSNetworkManagerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,11 +184,26 @@
 				4BA5B74A21F0601300A675AB /* AppDelegate.m */,
 				4BA5B74C21F0601300A675AB /* ViewController.h */,
 				4BA5B74D21F0601300A675AB /* ViewController.m */,
+				4BA5B7FB21F5A9E000A675AB /* LSServiceFactory.h */,
+				4BA5B7FC21F5A9E000A675AB /* LSServiceFactory.m */,
+				4B1D6E4F21F6C110008BDD50 /* LSNetworkService.h */,
+				4B1D6E5021F6C110008BDD50 /* LSNetworkService.m */,
+				4B1D6E5321F6C8AF008BDD50 /* LSNetworkError.h */,
+				4B1D6E5421F6C8AF008BDD50 /* LSNetworkError.m */,
+				4B1D6E5621F6CB3B008BDD50 /* LSRequestParams.h */,
+				4B1D6E5721F6CB3B008BDD50 /* LSRequestParams.m */,
+				4B1D6E5921F6CBF5008BDD50 /* LSAppContext.h */,
+				4B1D6E5A21F6CBF5008BDD50 /* LSAppContext.m */,
+				4B1D6E5D21F6E46C008BDD50 /* LSDemoBaseManager.h */,
+				4B1D6E5E21F6E46C008BDD50 /* LSDemoBaseManager.m */,
+				4B1D6E6021F6E522008BDD50 /* LSLoginAPIManager.h */,
+				4B1D6E6121F6E522008BDD50 /* LSLoginAPIManager.m */,
 				4BA5B74F21F0601300A675AB /* Main.storyboard */,
 				4BA5B75221F0601400A675AB /* Assets.xcassets */,
 				4BA5B75421F0601400A675AB /* LaunchScreen.storyboard */,
 				4BA5B75721F0601400A675AB /* Info.plist */,
 				4BA5B75821F0601400A675AB /* main.m */,
+				4B1D6E5C21F6E183008BDD50 /* LSNetworkManagerDemo-PCH.pch */,
 			);
 			path = LSNetworkManagerDemo;
 			sourceTree = "<group>";
@@ -197,6 +233,7 @@
 				4BA5B7E621F5977B00A675AB /* Enum */,
 				4BA5B76E21F0633C00A675AB /* LSNetworkConfig.h */,
 				4BA5B76F21F0633C00A675AB /* LSNetworkConfig.m */,
+				4B1D6E5221F6C1D2008BDD50 /* LSNetworkManager.h */,
 			);
 			name = LSNetworkManager;
 			path = ../../LSNetworkManager;
@@ -262,8 +299,6 @@
 			children = (
 				4BA5B7E321F5967E00A675AB /* LSService.h */,
 				4BA5B7E421F5967E00A675AB /* LSService.m */,
-				4BA5B7FB21F5A9E000A675AB /* LSServiceFactory.h */,
-				4BA5B7FC21F5A9E000A675AB /* LSServiceFactory.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -310,6 +345,7 @@
 			children = (
 				4BA5B80521F5BBFD00A675AB /* LSErrorProtocol.h */,
 				4BA5B80621F5D01100A675AB /* LSServiceCreateProtocol.h */,
+				4BA5B80721F6BBB400A675AB /* LSRequestParamsProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -334,6 +370,7 @@
 				4BA5B74221F0601300A675AB /* Sources */,
 				4BA5B74321F0601300A675AB /* Frameworks */,
 				4BA5B74421F0601300A675AB /* Resources */,
+				A92FE56DBA9564329525CF86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -440,6 +477,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A92FE56DBA9564329525CF86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LSNetworkManagerDemo/Pods-LSNetworkManagerDemo-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSNetworkManagerDemo/Pods-LSNetworkManagerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D349831945C82E52D027B5E9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -465,12 +520,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1D6E5121F6C110008BDD50 /* LSNetworkService.m in Sources */,
 				4BA5B74E21F0601300A675AB /* ViewController.m in Sources */,
 				4BA5B7F221F5A5F100A675AB /* LSLogger.m in Sources */,
 				4BA5B7CB21F58E2600A675AB /* NSArray+LSNetwork.m in Sources */,
 				4BA5B7DB21F5943400A675AB /* LSCacheObject.m in Sources */,
 				4BA5B7D121F5908200A675AB /* NSMutableString+LSNetwork.m in Sources */,
 				4BA5B7D421F590F700A675AB /* NSObject+LSNetwork.m in Sources */,
+				4B1D6E6221F6E522008BDD50 /* LSLoginAPIManager.m in Sources */,
 				4BA5B7CE21F58ED900A675AB /* NSDictionary+LSNetwork.m in Sources */,
 				4BA5B7DE21F594A000A675AB /* LSCache.m in Sources */,
 				4BA5B80321F5AEB400A675AB /* LSAPIBaseManager.m in Sources */,
@@ -478,8 +535,12 @@
 				4BA5B7FD21F5A9E000A675AB /* LSServiceFactory.m in Sources */,
 				4BA5B7D721F5920B00A675AB /* NSURLRequest+LSNetwork.m in Sources */,
 				4BA5B75921F0601400A675AB /* main.m in Sources */,
+				4B1D6E5B21F6CBF5008BDD50 /* LSAppContext.m in Sources */,
 				4BA5B7EF21F5A50A00A675AB /* LSResponseError.m in Sources */,
+				4B1D6E5821F6CB3B008BDD50 /* LSRequestParams.m in Sources */,
+				4B1D6E5F21F6E46C008BDD50 /* LSDemoBaseManager.m in Sources */,
 				4BA5B74B21F0601300A675AB /* AppDelegate.m in Sources */,
+				4B1D6E5521F6C8AF008BDD50 /* LSNetworkError.m in Sources */,
 				4BA5B7E521F5967E00A675AB /* LSService.m in Sources */,
 				4BA5B7F621F5A87B00A675AB /* LSRequestGenerator.m in Sources */,
 				4BA5B77021F0633C00A675AB /* LSNetworkConfig.m in Sources */,
@@ -644,6 +705,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LSNetworkManagerDemo/LSNetworkManagerDemo-PCH.pch";
 				INFOPLIST_FILE = LSNetworkManagerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -662,6 +725,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LSNetworkManagerDemo/LSNetworkManagerDemo-PCH.pch";
 				INFOPLIST_FILE = LSNetworkManagerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -680,6 +745,8 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = LSNetworkManagerDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -699,6 +766,8 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = LSNetworkManagerDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

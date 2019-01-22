@@ -8,12 +8,13 @@
 
 #import "LSAPIBaseManager.h"
 #import <CoreTelephony/CTCellularData.h>
-#import "LSServiceFactory.h"
+#import "LSServiceCreateProtocol.h"
 #import "LSErrorProtocol.h"
 #import "LSResponseError.h"
 #import "LSNetworkConfig.h"
 #import "LSURLResponse.h"
 #import "LSApiProxy.h"
+#import "LSService.h"
 #import "LSLogger.h"
 #import "LSCache.h"
 
@@ -391,7 +392,8 @@ NSString * const kLSAPIBaseManagerRequestID = @"kLSAPIBaseManagerRequestID";
         __strong typeof (weakSelf) strongSelf = weakSelf;
         LSURLResponse *response = [[LSURLResponse alloc] initWithData:result];
         response.requestParams = params;
-        [LSLogger logDebugInfoWithCachedResponse:response methodName:methodName serviceIdentifier:[[LSServiceFactory sharedInstance] serviceWithIdentifier:serviceIdentifier]];
+        LSService *service = [[LSNetworkConfig sharedInstance].serviceCreate serviceWithIdentifier:serviceIdentifier];
+        [LSLogger logDebugInfoWithCachedResponse:response methodName:methodName serviceIdentifier:service];
         [strongSelf successedOnCallingAPI:response];
     });
     return YES;

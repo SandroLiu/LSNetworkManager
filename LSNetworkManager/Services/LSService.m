@@ -14,8 +14,8 @@
 {
     if (self = [super init]) {
         // 要求子类遵循 NCServiceProtocol 协议
-        if ([self conformsToProtocol:@protocol(LSServiceCreateProtocol)]) {
-            self.child = (id<LSServiceCreateProtocol>)self;
+        if ([self conformsToProtocol:@protocol(LSServiceProtocol)]) {
+            self.child = (id<LSServiceProtocol>)self;
         }
     }
     return self;

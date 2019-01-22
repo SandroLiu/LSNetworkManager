@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "LSNetworkConfig.h"
+#import "LSServiceFactory.h"
+#import "LSNetworkError.h"
+#import "LSRequestParams.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +20,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    LSNetworkConfig *config = [LSNetworkConfig sharedInstance];
+    config.serviceCreate = [LSServiceFactory sharedInstance];
+    config.errorDelegate = [LSNetworkError new];
+    config.requestParams = [LSRequestParams new];
     return YES;
 }
 

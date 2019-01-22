@@ -7,6 +7,7 @@
 //
 
 #import "LSCacheObject.h"
+#import "LSNetworkConfig.h"
 
 @interface LSCacheObject ()
 
@@ -25,7 +26,7 @@
 - (BOOL)isOutdated
 {
     NSTimeInterval timeInterval = [[NSDate date] timeIntervalSinceDate:self.lastUpdateTime];
-    return timeInterval > 300; //TODO: 修改成可配置
+    return timeInterval > [LSNetworkConfig sharedInstance].cacheOutdate; 
 }
 
 - (void)setContent:(NSData *)content

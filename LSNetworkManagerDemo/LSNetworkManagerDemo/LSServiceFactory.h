@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LSServiceCreateProtocol.h"
 #import "LSService.h"
 
-@interface LSServiceFactory : NSObject
+static NSString *const KLSServiceNetwork = @"KLSServiceNetwork";
+@interface LSServiceFactory : NSObject<LSServiceCreateProtocol>
 
 + (instancetype)sharedInstance;
 
-- (LSService<LSServiceCreateProtocol> *)serviceWithIdentifier:(NSString *)identifier;
+- (LSService<LSServiceProtocol> *)serviceWithIdentifier:(NSString *)identifier;
 @end
 

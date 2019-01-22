@@ -1,0 +1,15 @@
+//
+//  LSNetworkManagerDemo-PCH.pch
+//  LSNetworkManagerDemo
+//
+//  Created by 刘帅 on 2019/1/22.
+//  Copyright © 2019年 刘帅. All rights reserved.
+//
+
+#ifndef LSNetworkManagerDemo_PCH_pch
+#define LSNetworkManagerDemo_PCH_pch
+
+#import "LSNetworkManager.h"
+#import <LSUtils.h>
+
+#endif /* LSNetworkManagerDemo_PCH_pch */

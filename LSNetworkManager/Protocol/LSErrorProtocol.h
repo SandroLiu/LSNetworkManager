@@ -20,7 +20,7 @@
  @param extra 额外信息
  @return 错误信息
  */
-- (LSResponseError *)errorWithRequestId:(NSInteger)requestId status:(NSUInteger)status extra:(NSString *)extra;
+- (LSResponseError *_Nonnull)errorWithRequestId:(NSInteger)requestId status:(NSUInteger)status extra:(NSString *)extra;
 
 /**
  请求返回校验不通过错误
@@ -30,6 +30,6 @@
  @param extra 额外信息
  @return 错误信息
  */
-- (LSResponseError *)errorWithRequestId:(NSInteger)requestId content:(id)content extra:(NSString *)extra;
+- (LSResponseError *_Nonnull)errorWithRequestId:(NSInteger)requestId content:(id)content extra:(NSString *)extra;
 @end
 

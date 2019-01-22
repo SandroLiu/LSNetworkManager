@@ -24,6 +24,11 @@ static LSNetworkConfig *_sharedInstance = nil;
         _sharedInstance = [[LSNetworkConfig alloc] init];
         _sharedInstance.reachabilityManager = [AFNetworkReachabilityManager sharedManager];
         [_sharedInstance.reachabilityManager startMonitoring];
+        _sharedInstance.requestSerializer = LSRequestSerializerTypeJSON;
+        _sharedInstance.responseSerializer = LSResponseSerializerTypeJSON;
+        _sharedInstance.timeoutInterval = 30.0;
+        _sharedInstance.cacheOutdate = 300.0;
+        _sharedInstance.cacheCountLimit = 1000;
     });
     return _sharedInstance;
 }

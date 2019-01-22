@@ -7,6 +7,9 @@
 //
 
 #import "LSServiceFactory.h"
+#import "LSNetworkService.h"
+
+/** 基本请求服务*/
 
 static LSServiceFactory *_sharedInstance = nil;
 @interface LSServiceFactory ()
@@ -28,7 +31,7 @@ static LSServiceFactory *_sharedInstance = nil;
 }
 
 #pragma mark- public methods
-- (LSService<LSServiceCreateProtocol> *)serviceWithIdentifier:(NSString *)identifier
+- (LSService<LSServiceProtocol> *)serviceWithIdentifier:(NSString *)identifier
 {
     if (self.serviceStorage[identifier] == nil) {
         self.serviceStorage[identifier] = [self newServiceWithIdentifier:identifier];
@@ -36,9 +39,11 @@ static LSServiceFactory *_sharedInstance = nil;
     return self.serviceStorage[identifier];
 }
 
-- (LSService<LSServiceCreateProtocol> *)newServiceWithIdentifier:(NSString *)identifier
+- (LSService<LSServiceProtocol> *)newServiceWithIdentifier:(NSString *)identifier
 {
-    //TODO: 添加具体网络服务
+    if ([identifier isEqualToString:KLSServiceNetwork]) {
+        return [[LSNetworkService alloc] init];
+    }
     return nil;
 }
 

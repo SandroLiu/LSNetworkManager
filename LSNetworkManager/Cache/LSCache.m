@@ -8,6 +8,7 @@
 
 #import "LSCache.h"
 #import "NSDictionary+LSNetwork.h"
+#import "LSNetworkConfig.h"
 #import "LSCacheObject.h"
 
 @interface LSCache ()
@@ -22,7 +23,7 @@
 {
     if (_cache == nil) {
         _cache = [[NSCache alloc] init];
-        _cache.countLimit = 1000; //TODO: 修改成可配置
+        _cache.countLimit = [LSNetworkConfig sharedInstance].cacheCountLimit;
     }
     return _cache;
 }

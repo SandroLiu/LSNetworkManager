@@ -9,6 +9,7 @@
 #import "LSURLResponse.h"
 #import "NSURLRequest+LSNetwork.h"
 #import "NSObject+LSNetwork.h"
+#import "LSNetworkConfig.h"
 
 @interface LSURLResponse ()
 
@@ -29,7 +30,11 @@
 {
     if (self = [super init]) {
         self.contentString = responseString;
-        self.content = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:nil];
+        if ([LSNetworkConfig sharedInstance].responseSerializer == LSResponseSerializerTypeJSON) {
+            self.content = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:nil];
+        } else {
+            self.content = responseData;
+        }
         self.requestId = requestId.integerValue;
         self.responseData = responseData;
         self.requestParams = request.ls_requestParams;
@@ -66,7 +71,11 @@
         self.requestId = 0;
         self.request = nil;
         self.responseData = [data copy];
-        self.content = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:NULL];
+        if ([LSNetworkConfig sharedInstance].responseSerializer == LSResponseSerializerTypeJSON) {
+            self.content = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        } else {
+            self.content = data;
+        }
         self.isCache = YES;
     }
     return self;

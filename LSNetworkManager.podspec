@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LSNetworkManager"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "基于AFNetwroking 3.0 封装的网络请求库"
   s.description  = %{
     基于AFNetwroking 3.0 封装的网络请求库, 使用灵活

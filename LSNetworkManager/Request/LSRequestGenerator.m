@@ -7,12 +7,12 @@
 //
 
 #import "LSRequestGenerator.h"
+#import <AFNetworking/AFNetworking.h>
 #import "LSRequestParamsProtocol.h"
 #import "LSServiceCreateProtocol.h"
 #import "NSURLRequest+LSNetwork.h"
 #import "LSUploadFileItem.h"
 #import "LSNetworkConfig.h"
-#import <AFNetworking.h>
 #import "LSService.h"
 #import "LSLogger.h"
 

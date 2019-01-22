@@ -7,7 +7,7 @@
 //
 
 #import "LSNetworkConfig.h"
-#import <AFNetworkReachabilityManager.h>
+#import <AFNetworking/AFNetworkReachabilityManager.h>
 
 static LSNetworkConfig *_sharedInstance = nil;
 @interface LSNetworkConfig ()

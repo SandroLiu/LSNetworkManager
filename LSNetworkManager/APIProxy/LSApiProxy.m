@@ -7,13 +7,13 @@
 //
 
 #import "LSApiProxy.h"
+#import <AFNetworking/AFNetworking.h>
 #import "LSRequestGenerator.h"
 #import "LSErrorProtocol.h"
 #import "LSResponseError.h"
 #import "LSNetworkConfig.h"
 #import "LSURLResponse.h"
 #import "LSNetworkEnum.h"
-#import <AFNetworking.h>
 #import "LSLogger.h"
 
 static LSApiProxy *_sharedInstance = nil;
